@@ -5,6 +5,9 @@ using UnityEngine;
 public class IncreaseLight : MonoBehaviour {
 
     private Light pointLight;
+    public bool done = false;
+    public float lightLevel = 1;
+    public GameObject overLight;
 	// Use this for initialization
 	void Start () {
         pointLight = GetComponent<Light>();
@@ -20,10 +23,15 @@ public class IncreaseLight : MonoBehaviour {
 
         if (other.gameObject.tag == "player")
         {
-            Debug.Log("Light Triggered");
-            if (pointLight.intensity < 1)
+            
+            if (!done)
             {
                 pointLight.intensity += (Time.deltaTime * 0.5f);
+                if(pointLight.intensity >= lightLevel)
+                {
+                    done = true;
+                    overLight.SendMessage("LightOn", SendMessageOptions.DontRequireReceiver);
+                }
             }
         }
     }
