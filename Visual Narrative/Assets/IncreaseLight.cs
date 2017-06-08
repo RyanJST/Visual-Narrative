@@ -8,6 +8,7 @@ public class IncreaseLight : MonoBehaviour {
     public bool done = false;
     public float lightLevel = 1;
     public GameObject overLight;
+	public GameObject location;
     public AudioSource audioSource;
 	// Use this for initialization
 	void Start () {
@@ -33,9 +34,19 @@ public class IncreaseLight : MonoBehaviour {
                 if(pointLight.intensity >= lightLevel)
                 {
                     done = true;
+					StartCoroutine (Move (location.transform.position));
                     overLight.SendMessage("LightOn", SendMessageOptions.DontRequireReceiver);
                 }
             }
         }
     }
+	public IEnumerator Move(Vector3 toPosition) {
+		Vector3 fromPosition = transform.position;
+		float duration = 1.75f;
+		for (float t=0f;t<duration;t+=Time.deltaTime) {
+			transform.position = Vector3.Lerp(fromPosition, toPosition, t/duration);
+			yield return 0;
+		}
+		transform.position = toPosition;
+	}
 }

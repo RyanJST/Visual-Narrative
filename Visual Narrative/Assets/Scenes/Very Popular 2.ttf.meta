@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 210f2af076d5944059536cebab881d95
+timeCreated: 1496904401
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Very Popular
+  fontNames:
+  - Very Popular
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

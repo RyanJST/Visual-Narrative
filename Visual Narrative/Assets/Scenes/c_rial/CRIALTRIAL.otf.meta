@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: dfbfe005d12814895a63c1d3bbb234b2
+timeCreated: 1496904216
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: C rial
+  fontNames:
+  - C rial
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: 18859273da9254335ac67c6d231dae4c, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
