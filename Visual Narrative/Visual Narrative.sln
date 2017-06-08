@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2015
+# Visual Studio 2017
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visual Narrative.Plugins", "Visual Narrative.Plugins.csproj", "{F03C3EE6-ED7C-A5C8-31DD-50D7001846F7}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Visual Narrative", "Visual Narrative.csproj", "{C60A19B8-7A2B-317B-0C8A-ACFC7A4054B0}"

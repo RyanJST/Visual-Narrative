@@ -8,9 +8,11 @@ public class IncreaseLight : MonoBehaviour {
     public bool done = false;
     public float lightLevel = 1;
     public GameObject overLight;
+    public AudioSource audioSource;
 	// Use this for initialization
 	void Start () {
         pointLight = GetComponent<Light>();
+        audioSource = GetComponentInParent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -27,6 +29,7 @@ public class IncreaseLight : MonoBehaviour {
             if (!done)
             {
                 pointLight.intensity += (Time.deltaTime * 0.5f);
+                audioSource.volume += (Time.deltaTime * 0.5f / lightLevel);
                 if(pointLight.intensity >= lightLevel)
                 {
                     done = true;
